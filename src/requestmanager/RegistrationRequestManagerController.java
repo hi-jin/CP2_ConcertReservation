@@ -1,17 +1,9 @@
 package requestmanager;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.net.Socket;
 import java.net.URL;
-import java.util.Arrays;
 import java.util.ResourceBundle;
 import java.util.function.Predicate;
 
-import javafx.application.Platform;
-import javafx.beans.value.ChangeListener;
-import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.collections.transformation.FilteredList;
@@ -20,11 +12,12 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
+import javafx.util.Callback;
 import javafx.scene.control.ListView;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.control.TextArea;
+import javafx.scene.layout.StackPane;
 
 public class RegistrationRequestManagerController implements Initializable {
 
@@ -34,52 +27,18 @@ public class RegistrationRequestManagerController implements Initializable {
 	@FXML Button btnRequestCancel;
 	@FXML Button btnCharge;
 	@FXML Button btnSeatStatus;
+	@FXML ListView dateSelectList;
 	@FXML Button btnMain;
 	
-	Socket socket;
-	PrintWriter out;
-	BufferedReader in;
-	
-	static String[] strConcertList;
-	
-	private static ObservableList<String> concertList;
-	private static FilteredList<String> filteredList;
-	
-	@FXML TextArea selectedConcertInfo;
+	private ObservableList<String> concertList;
+	private FilteredList<String> filteredList;
+	@FXML StackPane stackPane;
 	
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
-		out = login.LoginController.getOut();
-		in = login.LoginController.getIn();
-		
-		out.println("getRegisteredConcertList");
-		try {
-			String concert = in.readLine();
-			strConcertList = concert.split("//");
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		if(!strConcertList[0].equals("1")) {
-			for(int i = 0; i < strConcertList.length; i++) {
-				String[] concert = strConcertList[i].split("/");
-				Platform.runLater(() -> concertList.add(concert[0]));
-			}
-		}
 		concertList = FXCollections.observableArrayList();
 		concertListView.setItems(concertList);
 		filteredList = new FilteredList<String>(concertList);
-		
-		concertListView.getSelectionModel().selectedIndexProperty().addListener(new ChangeListener<Number>() {
-			@Override
-			public void changed(ObservableValue<? extends Number> observable, Number oldValue, Number newValue) {
-//				TODO
-				String[] concert = strConcertList[(int) newValue].split("/");
-				selectedConcertInfo.setText("Title : " + concert[0] + "\nNumberOfSeat : " + concert[1]
-						+ "\nDate : " + concert[2]);
-			}
-
-		});
 	}
 	
 	@FXML public void searchAction() {
@@ -107,16 +66,35 @@ public class RegistrationRequestManagerController implements Initializable {
 	}
 	
 	@FXML public void requestCancel() {
-		System.out.println("cancelRequest/" + concertListView.getSelectionModel().getSelectedIndex());
-		out.println("cancelRequest/" + concertListView.getSelectionModel().getSelectedIndex());
+		
 	}
 	
 	@FXML public void moveToCharge() {
 		
 	}
 	
+	//임시로 확인하기 위해서 관객용(예매하기버튼활성화)으로 구현함
 	@FXML public void moveToSeatStatus() {
-		
+		try {
+			FXMLLoader loader = new FXMLLoader(getClass().getResource("/requestmanager/RRM_SeatStatus1.fxml"));
+			Parent seat = loader.load();
+			loader.setControllerFactory(new Callback<Class<?>, Object>() {
+				@Override
+				public Object call(Class<?> param) {
+					return new SeatStatusController(0);
+				}
+			});
+			seat.getStylesheets().add(getClass().getResource("seatStatus.css").toExternalForm());
+			stackPane.getChildren().add(seat);
+//			Parent seat = FXMLLoader.load(getClass().getResource("/requestmanager/RRM_SeatStatus1.fxml"));
+//			Scene scene = new Scene(seat);
+//			scene.getStylesheets().add(getClass().getResource("seatStatus.css").toExternalForm());
+//			Stage primaryStage = (Stage)btnSeatStatus.getScene().getWindow();
+//			primaryStage.setScene(scene);
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 
 	@FXML public void moveToMain() {

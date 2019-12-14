@@ -192,19 +192,19 @@
                               <ToggleGroup fx:id="choiceSeat1" />
                            </toggleGroup>
                         </ToggleButton>
-                        <ToggleButton mnemonicParsing="false" prefHeight="20.0" prefWidth="21.0" toggleGroup="$choiceSeat1" />
-                        <ToggleButton mnemonicParsing="false" prefHeight="20.0" prefWidth="21.0" toggleGroup="$choiceSeat1" />
-                        <ToggleButton mnemonicParsing="false" prefHeight="20.0" prefWidth="21.0" toggleGroup="$choiceSeat1" />
-                        <ToggleButton mnemonicParsing="false" prefHeight="20.0" prefWidth="21.0" toggleGroup="$choiceSeat1" />
+                        <ToggleButton mnemonicParsing="false" prefHeight="20.0" prefWidth="21.0" toggleGroup="$choiceSeat" />
+                        <ToggleButton mnemonicParsing="false" prefHeight="20.0" prefWidth="21.0" toggleGroup="$choiceSeat" />
+                        <ToggleButton mnemonicParsing="false" prefHeight="20.0" prefWidth="21.0" toggleGroup="$choiceSeat" />
+                        <ToggleButton mnemonicParsing="false" prefHeight="20.0" prefWidth="21.0" toggleGroup="$choiceSeat" />
                      </children>
                   </HBox>
                   <HBox>
                      <children>
-                        <ToggleButton mnemonicParsing="false" prefHeight="20.0" prefWidth="21.0" toggleGroup="$choiceSeat1" />
-                        <ToggleButton mnemonicParsing="false" prefHeight="20.0" prefWidth="21.0" toggleGroup="$choiceSeat1" />
-                        <ToggleButton mnemonicParsing="false" prefHeight="20.0" prefWidth="21.0" toggleGroup="$choiceSeat1" />
-                        <ToggleButton mnemonicParsing="false" prefHeight="20.0" prefWidth="21.0" toggleGroup="$choiceSeat1" />
-                        <ToggleButton mnemonicParsing="false" prefHeight="20.0" prefWidth="21.0" toggleGroup="$choiceSeat1" />
+                        <ToggleButton mnemonicParsing="false" prefHeight="20.0" prefWidth="21.0" toggleGroup="$choiceSeat" />
+                        <ToggleButton mnemonicParsing="false" prefHeight="20.0" prefWidth="21.0" toggleGroup="$choiceSeat" />
+                        <ToggleButton mnemonicParsing="false" prefHeight="20.0" prefWidth="21.0" toggleGroup="$choiceSeat" />
+                        <ToggleButton mnemonicParsing="false" prefHeight="20.0" prefWidth="21.0" toggleGroup="$choiceSeat" />
+                        <ToggleButton mnemonicParsing="false" prefHeight="20.0" prefWidth="21.0" toggleGroup="$choiceSeat" />
                      </children>
                   </HBox>
                   <HBox>
@@ -214,10 +214,10 @@
                               <ToggleGroup fx:id="choiceSeat3" />
                            </toggleGroup>
                         </ToggleButton>
-                        <ToggleButton mnemonicParsing="false" prefHeight="20.0" prefWidth="21.0" toggleGroup="$choiceSeat3" />
-                        <ToggleButton mnemonicParsing="false" prefHeight="20.0" prefWidth="21.0" toggleGroup="$choiceSeat3" />
-                        <ToggleButton mnemonicParsing="false" prefHeight="20.0" prefWidth="21.0" toggleGroup="$choiceSeat3" />
-                        <ToggleButton mnemonicParsing="false" prefHeight="20.0" prefWidth="21.0" toggleGroup="$choiceSeat3" />
+                        <ToggleButton mnemonicParsing="false" prefHeight="20.0" prefWidth="21.0" toggleGroup="$choiceSeat" />
+                        <ToggleButton mnemonicParsing="false" prefHeight="20.0" prefWidth="21.0" toggleGroup="$choiceSeat" />
+                        <ToggleButton mnemonicParsing="false" prefHeight="20.0" prefWidth="21.0" toggleGroup="$choiceSeat" />
+                        <ToggleButton mnemonicParsing="false" prefHeight="20.0" prefWidth="21.0" toggleGroup="$choiceSeat" />
                      </children>
                   </HBox>
                </children>
@@ -226,29 +226,29 @@
                <children>
                   <HBox>
                      <children>
-                        <ToggleButton mnemonicParsing="false" prefHeight="20.0" prefWidth="21.0" toggleGroup="$choiceSeat1" />
-                        <ToggleButton mnemonicParsing="false" prefHeight="20.0" prefWidth="21.0" toggleGroup="$choiceSeat1" />
-                        <ToggleButton mnemonicParsing="false" prefHeight="20.0" prefWidth="21.0" toggleGroup="$choiceSeat1" />
-                        <ToggleButton mnemonicParsing="false" prefHeight="20.0" prefWidth="21.0" toggleGroup="$choiceSeat1" />
-                        <ToggleButton mnemonicParsing="false" prefHeight="20.0" prefWidth="21.0" toggleGroup="$choiceSeat1" />
+                        <ToggleButton mnemonicParsing="false" prefHeight="20.0" prefWidth="21.0" toggleGroup="$choiceSeat" />
+                        <ToggleButton mnemonicParsing="false" prefHeight="20.0" prefWidth="21.0" toggleGroup="$choiceSeat" />
+                        <ToggleButton mnemonicParsing="false" prefHeight="20.0" prefWidth="21.0" toggleGroup="$choiceSeat" />
+                        <ToggleButton mnemonicParsing="false" prefHeight="20.0" prefWidth="21.0" toggleGroup="$choiceSeat" />
+                        <ToggleButton mnemonicParsing="false" prefHeight="20.0" prefWidth="21.0" toggleGroup="$choiceSeat" />
                      </children>
                   </HBox>
                   <HBox>
                      <children>
-                        <ToggleButton mnemonicParsing="false" prefHeight="20.0" prefWidth="21.0" toggleGroup="$choiceSeat1" />
-                        <ToggleButton mnemonicParsing="false" prefHeight="20.0" prefWidth="21.0" toggleGroup="$choiceSeat1" />
-                        <ToggleButton mnemonicParsing="false" prefHeight="20.0" prefWidth="21.0" toggleGroup="$choiceSeat1" />
-                        <ToggleButton mnemonicParsing="false" prefHeight="20.0" prefWidth="21.0" toggleGroup="$choiceSeat1" />
-                        <ToggleButton mnemonicParsing="false" prefHeight="20.0" prefWidth="21.0" toggleGroup="$choiceSeat1" />
+                        <ToggleButton mnemonicParsing="false" prefHeight="20.0" prefWidth="21.0" toggleGroup="$choiceSeat" />
+                        <ToggleButton mnemonicParsing="false" prefHeight="20.0" prefWidth="21.0" toggleGroup="$choiceSeat" />
+                        <ToggleButton mnemonicParsing="false" prefHeight="20.0" prefWidth="21.0" toggleGroup="$choiceSeat" />
+                        <ToggleButton mnemonicParsing="false" prefHeight="20.0" prefWidth="21.0" toggleGroup="$choiceSeat" />
+                        <ToggleButton mnemonicParsing="false" prefHeight="20.0" prefWidth="21.0" toggleGroup="$choiceSeat" />
                      </children>
                   </HBox>
                   <HBox>
                      <children>
-                        <ToggleButton mnemonicParsing="false" prefHeight="20.0" prefWidth="21.0" toggleGroup="$choiceSeat1" />
-                        <ToggleButton mnemonicParsing="false" prefHeight="20.0" prefWidth="21.0" toggleGroup="$choiceSeat1" />
-                        <ToggleButton mnemonicParsing="false" prefHeight="20.0" prefWidth="21.0" toggleGroup="$choiceSeat1" />
-                        <ToggleButton mnemonicParsing="false" prefHeight="20.0" prefWidth="21.0" toggleGroup="$choiceSeat1" />
-                        <ToggleButton mnemonicParsing="false" prefHeight="20.0" prefWidth="21.0" toggleGroup="$choiceSeat1" />
+                        <ToggleButton mnemonicParsing="false" prefHeight="20.0" prefWidth="21.0" toggleGroup="$choiceSeat" />
+                        <ToggleButton mnemonicParsing="false" prefHeight="20.0" prefWidth="21.0" toggleGroup="$choiceSeat" />
+                        <ToggleButton mnemonicParsing="false" prefHeight="20.0" prefWidth="21.0" toggleGroup="$choiceSeat" />
+                        <ToggleButton mnemonicParsing="false" prefHeight="20.0" prefWidth="21.0" toggleGroup="$choiceSeat" />
+                        <ToggleButton mnemonicParsing="false" prefHeight="20.0" prefWidth="21.0" toggleGroup="$choiceSeat" />
                      </children>
                   </HBox>
                </children>
@@ -265,7 +265,7 @@
             <Font size="14.0" />
          </font>
       </Label>
-      <Label layoutX="77.0" layoutY="470.0" text="예약된 좌석 수:">
+      <Label layoutX="77.0" layoutY="470.0" text="예매된 좌석 수:">
          <font>
             <Font size="14.0" />
          </font>
@@ -279,8 +279,8 @@
             <Font size="17.0" />
          </font>
       </Label>
-      <Button layoutX="557.0" layoutY="450.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" text="예약 접수 시작" />
-      <Button layoutX="674.0" layoutY="450.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" text="예약 접수 종료" />
+      <Button layoutX="571.0" layoutY="479.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" text="예약 접수 시작" />
+      <Button layoutX="686.0" layoutY="479.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" text="예약 접수 종료" />
       <Label layoutX="105.0" layoutY="519.0" text="총 좌석 수:">
          <font>
             <Font size="14.0" />
@@ -292,5 +292,6 @@
          </font>
       </Label>
       <Button fx:id="btnRRM" layoutX="716.0" layoutY="546.0" mnemonicParsing="false" onAction="#moveToRRM" prefHeight="40.0" prefWidth="70.0" text="뒤로가기" />
+      <Button layoutX="456.0" layoutY="479.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" text="예매하기" />
    </children>
 </AnchorPane>

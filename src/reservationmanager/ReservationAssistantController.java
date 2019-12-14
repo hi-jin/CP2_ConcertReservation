@@ -12,6 +12,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
+import requestmanager.SeatStatusController;
 import javafx.scene.control.ListView;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -26,6 +27,15 @@ public class ReservationAssistantController implements Initializable {
 	
 	private ObservableList<String> concertList;
 	private FilteredList<String> filteredList;
+	public int num = 1;
+	
+	public ReservationAssistantController() {
+		
+	}
+	
+	public int getNum() {
+		return num;
+	}
 	
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
@@ -48,7 +58,9 @@ public class ReservationAssistantController implements Initializable {
 	
 	@FXML public void moveToSeatStatus() {
 		try {
-			Parent seat = FXMLLoader.load(getClass().getResource("/reservationmanager/RA_SeatStatus1.fxml"));
+			num = 2;
+			
+			Parent seat = FXMLLoader.load(getClass().getResource("/requestmanager/RRM_SeatStatus1.fxml"));
 			Scene scene = new Scene(seat);
 			scene.getStylesheets().add(getClass().getResource("seatStatus.css").toExternalForm());
 			Stage primaryStage = (Stage)btnReservation.getScene().getWindow();
